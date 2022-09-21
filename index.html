@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador | Alura</title>
+  <!-- *Styles* -->
+  <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <!-- *Fonts* -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- *Scripts* -->
+  <script src="https://kit.fontawesome.com/c5df87a38b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <img src="assets/logo.svg" alt="logo da alura">
+  </header>
+  <main>
+    <div class="text-input">
+      <textarea name="text-input" id="text-input" cols="30" rows="10" placeholder="Digite seu texto"
+        spellcheck="false"></textarea>
+      <p class="info">
+        <img src="assets/info.svg" alt="ícone de informação">
+        Apenas letras minúsculas e sem acento.
+      </p>
+      <button>
+        <i class="fa-solid fa-key"></i>
+        Criptografar
+      </button>
+      <button>
+        <i class="fa-solid fa-unlock-keyhole"></i>
+        Descriptografar
+      </button>
+    </div>
+    <div class="fig-info">
+      <img src="assets/illustration.svg"
+        alt="ilustração de um homem de cabelo azul e roupa azul ajoelhado segurando uma lupa e olhando um diamante bilhante">
+      <p>Nenhum texto encontrado</p>
+      <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+    </div>
+    <div class="text-output" style="display: none;">
+      <textarea name="text-output" id="text-output" cols="30" rows="10" spellcheck="false"></textarea>
+      <button>
+        <i class="fa-regular fa-copy"></i>
+        Copiar
+      </button>
+    </div>
+  </main>
+</body>
+
+</html>

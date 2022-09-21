@@ -1,0 +1,95 @@
+.text-input {
+  flex: 550px;
+}
+
+.text-input textarea {
+  width: 100%;
+
+  color: #0a3871;
+  background-color: #f3f5fc;
+}
+
+.text-input textarea::placeholder {
+  color: #0a3871;
+}
+
+.text-input p.info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-input button:nth-child(3) {
+  background-color: #0a3871;
+  color: white;
+  margin-right: 16px;
+
+  box-shadow: 0 6px #356ea9;
+
+  transition: transform .2s;
+}
+
+.text-input button:nth-child(4) {
+  background-color: #356ea9;
+  color: white;
+  margin-right: 16px;
+
+  box-shadow: 0 6px #0a3871;
+
+  transition: transform .2s;
+}
+
+/*********************************/
+.fig-info {
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 598px;
+  height: 428px;
+  gap: 24px;
+
+  text-align: center;
+
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.fig-info p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.fig-info p:nth-child(3) {
+  margin-bottom: 32px;
+}
+
+/*********************************/
+.text-output {
+  flex: 598px;
+  height: 428px;
+  background-color: white;
+
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.text-output textarea {
+  color: #495057;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.text-output button {
+  display: block;
+  margin: 24px auto;
+  width: 33%;
+
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+
+  transition: background .7s;
+}

@@ -1,0 +1,60 @@
+.text-input button:nth-child(3):active {
+  transform: translateY(5px);
+  box-shadow: 0 3px #356ea9;
+}
+
+.text-input button:nth-child(4):active {
+  transform: translateY(5px);
+  box-shadow: 0 3px #0a3871;
+}
+
+/*********************************/
+.text-output button:hover {
+  color: white;
+  background-color: #0a3871;
+}
+
+/*********************************/
+header img {
+  animation: fromLeft .7s .3s backwards;
+}
+
+main div {
+  animation: fromTop .7s .3s backwards;
+}
+
+.text-input button:nth-child(3) {
+  animation: fromTop .7s .3s backwards;
+}
+
+.text-input button:nth-child(4) {
+  animation: fromTop .7s .6s backwards;
+}
+
+.fig-info img {
+  animation: fromLeft .9s .6s backwards;
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

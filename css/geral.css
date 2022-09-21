@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f5fc;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  padding: 35px 0 0 35px;
+}
+
+main {
+  margin: 35px auto;
+  width: 90%;
+  display: flex;
+  gap: 80px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+
+  resize: none;
+  border: none;
+}
+
+p {
+  color: #495057;
+  line-height: 24px;
+}
+
+button {
+  width: 45%;
+  padding: 24px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+
+  margin-top: 16px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
