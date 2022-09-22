@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <!-- *Scripts* -->
   <script src="https://kit.fontawesome.com/c5df87a38b.js" crossorigin="anonymous"></script>
+  <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -27,13 +28,13 @@
         spellcheck="false"></textarea>
       <p class="info">
         <img src="assets/info.svg" alt="ícone de informação">
-        Apenas letras minúsculas e sem acento.
+        Não utilize acentuação.
       </p>
-      <button>
+      <button type="button" id="btn-encrypt">
         <i class="fa-solid fa-key"></i>
         Criptografar
       </button>
-      <button>
+      <button type="button" id="btn-decrypt">
         <i class="fa-solid fa-unlock-keyhole"></i>
         Descriptografar
       </button>
@@ -45,8 +46,9 @@
       <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
     </div>
     <div class="text-output" style="display: none;">
-      <textarea name="text-output" id="text-output" cols="30" rows="10" spellcheck="false"></textarea>
-      <button>
+      <textarea name="text-output" id="text-output" cols="30" rows="10" placeholder="Texto criptografado"
+        spellcheck="false"></textarea>
+      <button type="button" id="btn-copy">
         <i class="fa-regular fa-copy"></i>
         Copiar
       </button>
