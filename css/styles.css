@@ -93,3 +93,18 @@
 
   transition: background .7s;
 }
+
+/*********************************/
+span.warning {
+  display: none;
+  text-align: center;
+
+  color: rgb(255, 255, 255);
+  padding: 13px;
+  border-radius: 5px;
+
+  position: absolute;
+  left: 435px;
+  top: 25px;
+  width: 35%;
+}
