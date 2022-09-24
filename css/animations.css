@@ -35,6 +35,10 @@ main div {
   animation: fromLeft .9s .6s backwards;
 }
 
+span.warning {
+  animation: fromTop .7s .3s backwards;
+}
+
 @keyframes fromTop {
   from {
     opacity: 0;
@@ -56,5 +60,16 @@ main div {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes backTop {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100px);
   }
 }
