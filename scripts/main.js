@@ -61,10 +61,10 @@ btnEncrypt.addEventListener("click", function () {
 
   if (textValueInput == "") {
     warningElement("#e45353", "#a33131", "Digite um texto para criptografar.");
-    changElement("block", "none");
+    changElement("flex", "none");
   } else if (!regEx.test(textValueInput)) {
     warningElement("#e45353", "#a33131", "Não utilize acentuação ou qualquer caractere especial.");
-    changElement("block", "none");
+    changElement("flex", "none");
   } else {
     textOutput.value = encryptText(textValueInput);
     warningElement("#51b04d", "#3a8038", "Texto criptografado com sucesso.");
@@ -78,10 +78,10 @@ btnDecrypt.addEventListener("click", function () {
 
   if (textValueInput == "") {
     warningElement("#e45353", "#a33131", "Digite um texto para descriptografar.");
-    changElement("block", "none");
+    changElement("flex", "none");
   } else if (!regEx.test(textValueInput)) {
     warningElement("#e45353", "#a33131", "Não utilize acentuação ou qualquer caractere especial.");
-    changElement("block", "none");
+    changElement("flex", "none");
   } else {
     textOutput.value = decryptText(textValueInput);
     warningElement("#51b04d", "#3a8038", "Texto descriptografado com sucesso.");
@@ -97,7 +97,7 @@ btnCopy.addEventListener("click", function () {
   document.execCommand('copy');
 
   warningElement("#303030", "#99978e", "Texto copiado para Área de Transferência.");
-  changElement("block", "none");
+  changElement("flex", "none");
 });
 
 
