@@ -104,7 +104,8 @@ span.warning {
   border-radius: 5px;
 
   position: absolute;
-  left: 435px;
+  left: 50%;
   top: 25px;
-  width: 35%;
+  width: 474px;
+  margin-left: -237px;
 }
