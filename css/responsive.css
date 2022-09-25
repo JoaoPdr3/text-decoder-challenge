@@ -1,0 +1,66 @@
+@media only screen and (max-width: 999px) {
+  header {
+    padding: 35px 0 0 5px;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .text-input {
+    flex: 350px;
+  }
+
+  .fig-info {
+    flex: 350px;
+  }
+
+  .text-output {
+    flex: 350px;
+  }
+
+  span.warning {
+    top: 45px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  header {
+    padding: 35px 0 0 0;
+  }
+
+  header img {
+    width: 100px;
+  }
+
+  textarea {
+    font-size: 20px;
+  }
+
+  .text-input button {
+    width: 100%;
+  }
+
+  .fig-info img {
+    width: 250px;
+  }
+
+  .fig-info p:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .text-output button {
+    width: 50%;
+  }
+
+  span.warning {
+    font-size: 15px;
+    width: 300px;
+    margin-left: -150px;
+  }
+}
