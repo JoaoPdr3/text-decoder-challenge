@@ -96,16 +96,16 @@
 
 /*********************************/
 span.warning {
-  display: none;
   text-align: center;
 
   color: rgb(255, 255, 255);
   padding: 13px;
   border-radius: 5px;
 
-  position: absolute;
-  left: 50%;
-  top: 25px;
-  width: 474px;
-  margin-left: -237px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  max-width: 450px;
+  margin: 40px auto 0 auto;
 }
