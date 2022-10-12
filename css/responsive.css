@@ -23,10 +23,6 @@
   .text-output {
     flex: 350px;
   }
-
-  span.warning {
-    top: 45px;
-  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -57,10 +53,11 @@
   .text-output button {
     width: 50%;
   }
+}
 
+@media only screen and (max-width: 459px) {
   span.warning {
-    font-size: 15px;
-    width: 300px;
-    margin-left: -150px;
+    max-width: 300px;
+    padding: 10px 40px;
   }
 }
