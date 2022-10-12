@@ -9,7 +9,7 @@
 
 ## Sobre
 
-Esse desafio foi fornecido pela Alura em Parceria com Oracle que desenvolveu um Programa chamado ONE — Oracle Next Education que com a Alura disponibilizou alguns cursos de Lógica de Programação.
+Esse desafio foi proposto pela Alura em Parceria com Oracle que desenvolveu um Programa chamado ONE — Oracle Next Education que com a Alura disponibilizou alguns cursos de Lógica de Programação.
 
 Esse desafio faz parte desses cursos com o intuito de colocar em prática o que foi visto e a buscar por outras fontes de ensinamento como a própria Documentação.
 
