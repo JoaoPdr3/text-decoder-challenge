@@ -1,63 +1,124 @@
-@media only screen and (max-width: 999px) {
-  header {
-    padding: 35px 0 0 5px;
-  }
+@media only screen and (max-width: 1268px) {
 
-  main {
-    flex-direction: column;
-    gap: 80px;
-  }
-
-  button {
-    font-size: 16px;
-  }
-
-  .text-input {
-    flex: 350px;
-  }
-
-  .fig-info {
-    flex: 350px;
-  }
-
-  .text-output {
-    flex: 350px;
+  .input-container,
+  .output-container,
+  .image-container {
+    width: 500px;
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 1148px) {
+
+  .input-container,
+  .output-container,
+  .image-container {
+    width: 460px;
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  main {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   header {
-    padding: 35px 0 0 0;
+    padding-left: 40px;
+  }
+
+  .input-container,
+  .output-container,
+  .image-container {
+    width: 600px;
+  }
+
+  .image-container img {
+    width: 48%;
+  }
+
+  .buttons {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+
+  .input-container,
+  .output-container,
+  .image-container {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 578px) {
+
+  .input-container,
+  .output-container,
+  .image-container,
+  .alert {
+    width: 430px;
+  }
+}
+
+@media only screen and (max-width: 478px) {
+  header {
+    padding-left: 20px;
   }
 
   header img {
-    width: 100px;
+    width: 42px;
   }
 
-  textarea {
-    font-size: 20px;
+  .input-container,
+  .output-container,
+  .image-container,
+  .alert {
+    width: 380px;
   }
 
-  .text-input button {
-    width: 100%;
+  .alert,
+  .buttons button {
+    font-size: 14px;
   }
 
-  .fig-info img {
-    width: 250px;
+  textarea,
+  .image-container .info:nth-child(2) {
+    font-size: 22px;
   }
 
-  .fig-info p:nth-child(2) {
-    font-size: 20px;
-  }
-
-  .text-output button {
-    width: 50%;
+  .image-container img {
+    width: 55%;
   }
 }
 
-@media only screen and (max-width: 459px) {
-  span.warning {
-    max-width: 300px;
-    padding: 10px 40px;
+@media only screen and (max-width: 398px) {
+
+  .input-container,
+  .output-container,
+  .image-container,
+  .alert {
+    width: 330px;
+  }
+
+  .input-container .buttons {
+    flex-direction: column;
+  }
+
+  .image-container img {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 328px) {
+
+  .input-container,
+  .output-container,
+  .image-container,
+  .alert {
+    width: 290px;
+  }
+
+  .image-container img {
+    width: 65%;
   }
 }
