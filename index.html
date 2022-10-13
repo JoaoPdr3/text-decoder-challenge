@@ -20,47 +20,54 @@
 </head>
 
 <body>
-  <span class="warning" id="warning">
-    <!-- Não utilize acentuação ou qualquer caractere especial. -->
-    <!-- Digite um texto para criptografar. -->
-    <!-- Digite um texto para descriptografar.  -->
-    <!-- Texto criptografado com sucesso. -->
-    <!-- Texto descriptografado com sucesso. -->
-    <!-- Texto copiado para Área de Transferência. -->
-  </span>
-  <header>
-    <img src="assets/logo.svg" alt="logo da alura">
+  <header id="header">
+    <img src="assets/logo.svg" alt="Logo da Alura.">
   </header>
   <main>
-    <div class="text-input">
-      <textarea name="text-input" id="text-input" cols="30" rows="10" placeholder="Digite seu texto"
-        spellcheck="false"></textarea>
-      <p class="info">
-        <img src="assets/info.svg" alt="ícone de informação">
-        Não utilize acentuação.
-      </p>
-      <button type="button" id="btn-encrypt">
-        <i class="fa-solid fa-key"></i>
-        Criptografar
-      </button>
-      <button type="button" id="btn-decrypt">
-        <i class="fa-solid fa-unlock-keyhole"></i>
-        Descriptografar
-      </button>
+    <span class="alert"></span>
+    <div class="input-container">
+      <div class="field">
+        <textarea name="text-input" id="text-input" cols="30" rows="10" placeholder="Digite seu texto"
+          spellcheck="false"></textarea>
+        <span class="info">
+          <img src="assets/info.svg" alt="Ícone de informação.">
+          Não utilize acentuação.
+        </span>
+      </div>
+      <div class="buttons">
+        <a href="#output-container">
+          <button type="button" id="btn-encrypt">
+            <i class="fa-solid fa-key"></i>
+            Criptografar
+          </button>
+        </a>
+        <a href="#output-container">
+          <button type="button" id="btn-decrypt">
+            <i class="fa-solid fa-unlock-keyhole"></i>
+            Descriptografar
+          </button>
+        </a>
+      </div>
     </div>
-    <div class="fig-info">
+    <div class="output-container" id="output-container">
+      <div class="field">
+        <textarea name="text-output" id="text-output" cols="30" rows="10" placeholder="Texto criptografado"
+          spellcheck="false"></textarea>
+      </div>
+      <div class="buttons">
+        <a href="#header">
+          <button type="button" id="btn-copy">
+            <i class="fa-regular fa-copy"></i>
+            Copiar
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="image-container">
       <img src="assets/illustration.svg"
-        alt="ilustração de um homem de cabelo azul e roupa azul ajoelhado segurando uma lupa e olhando um diamante bilhante">
-      <p>Nenhum texto encontrado</p>
-      <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-    </div>
-    <div class="text-output" style="display: none;">
-      <textarea name="text-output" id="text-output" cols="30" rows="10" placeholder="Texto criptografado"
-        spellcheck="false"></textarea>
-      <button type="button" id="btn-copy">
-        <i class="fa-regular fa-copy"></i>
-        Copiar
-      </button>
+        alt="Ilustração de um homem de cabelo azul e roupa azul ajoelhado segurando uma lupa e olhando um diamante bilhante.">
+      <span class="info">Nenhum texto encontrado</span>
+      <span class="info">Digite um texto que você deseja criptografar ou descriptografar.</span>
     </div>
   </main>
 </body>
