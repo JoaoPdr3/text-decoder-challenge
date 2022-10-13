@@ -6,9 +6,9 @@ const btnCopy = document.getElementById("btn-copy");
 const textInput = document.getElementById("text-input");
 const textOutput = document.getElementById("text-output");
 
-const divInfo = document.querySelector(".fig-info");
-const divTextOutput = document.querySelector(".text-output");
-const spanWarning = document.getElementById("warning");
+const divImage = document.querySelector(".image-container");
+const divOutput = document.querySelector(".output-container");
+const spanAlert = document.querySelector(".alert");
 // ---------------------=---------------------- //
 
 // - Functions Encrypt and Decrypt Text - //
@@ -37,20 +37,22 @@ function decryptText(text) {
 // ---------------------=---------------------- //
 // - Elements CSS - //
 function changElement(valueOne, valueTwo) {
-  divInfo.style.display = valueOne
-  divTextOutput.style.display = valueTwo;
+  divImage.style.display = valueOne
+  divOutput.style.display = valueTwo;
 }
 
-function warningElement(bgColo, bxShadow, warningText) {
-  spanWarning.style.backgroundColor = `${bgColo}`;
-  spanWarning.style.boxShadow = `inset 0px -3px 0px 0px ${bxShadow}`;
-  spanWarning.innerText = warningText;
-  spanWarning.style.display = "block";
+function alertElement(bgColor, bdrColor, alertText) {
+  spanAlert.style.backgroundColor = `${bgColor}`;
+  spanAlert.style.borderColor = `${bdrColor}`;
+  spanAlert.innerText = alertText;
 
   //Animation hide
   setTimeout(() => {
-    spanWarning.style.display = "none";
-  }, 2000);
+    spanAlert.style.display = "block";
+    setTimeout(() => {
+      spanAlert.style.display = "none";
+    }, 2000);
+  }, 100)
 }
 
 // ---------------------=---------------------- //
@@ -60,14 +62,14 @@ btnEncrypt.addEventListener("click", function () {
   let textValueInput = textInput.value.toLowerCase();
 
   if (textValueInput == "") {
-    warningElement("#e45353", "#a33131", "Digite um texto para criptografar.");
+    alertElement("#6ba1f1", "#5078b4", "Digite um texto para criptografar.");
     changElement("flex", "none");
   } else if (!regEx.test(textValueInput)) {
-    warningElement("#e45353", "#a33131", "Não utilize acentuação ou qualquer caractere especial.");
+    alertElement("#FF5447", "#c54137", "Não utilize acentuação ou qualquer caractere especial.");
     changElement("flex", "none");
   } else {
     textOutput.value = encryptText(textValueInput);
-    warningElement("#51b04d", "#3a8038", "Texto criptografado com sucesso.");
+    alertElement("#8dec75", "#74c061", "Texto criptografado com sucesso.");
     changElement("none", "block");
   }
 });
@@ -77,14 +79,14 @@ btnDecrypt.addEventListener("click", function () {
   let textValueInput = textInput.value.toLowerCase();
 
   if (textValueInput == "") {
-    warningElement("#e45353", "#a33131", "Digite um texto para descriptografar.");
+    alertElement("#6ba1f1", "#5078b4", "Digite um texto para descriptografar.");
     changElement("flex", "none");
   } else if (!regEx.test(textValueInput)) {
-    warningElement("#e45353", "#a33131", "Não utilize acentuação ou qualquer caractere especial.");
+    alertElement("#e45353", "#a33131", "Não utilize acentuação ou qualquer caractere especial.");
     changElement("flex", "none");
   } else {
     textOutput.value = decryptText(textValueInput);
-    warningElement("#51b04d", "#3a8038", "Texto descriptografado com sucesso.");
+    alertElement("#8dec75", "#74c061", "Texto descriptografado com sucesso.");
     changElement("none", "block");
   }
 });
@@ -96,7 +98,7 @@ btnCopy.addEventListener("click", function () {
   textOutput.select();
   document.execCommand('copy');
 
-  warningElement("#303030", "#99978e", "Texto copiado para Área de Transferência.");
+  alertElement("#6ba1f1", "#5078b4", "Texto copiado para Área de Transferência.");
   changElement("flex", "none");
 });
 
