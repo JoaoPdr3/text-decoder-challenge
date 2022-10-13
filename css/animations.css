@@ -4,9 +4,12 @@ header img {
 
 .input-container,
 .image-container .info,
-.output-container,
 .input-container button:nth-child(1) {
   animation: fromTop .7s .4s backwards;
+}
+
+.output-container {
+  animation: fromTop .4s .2s backwards;
 }
 
 .image-container img {
