@@ -82,7 +82,7 @@ btnDecrypt.addEventListener("click", function () {
     alertElement("#6ba1f1", "#5078b4", "Digite um texto para descriptografar.");
     changElement("flex", "none");
   } else if (!regEx.test(textValueInput)) {
-    alertElement("#e45353", "#a33131", "Não utilize acentuação ou qualquer caractere especial.");
+    alertElement("#FF5447", "#c54137", "Não utilize acentuação ou qualquer caractere especial.");
     changElement("flex", "none");
   } else {
     textOutput.value = decryptText(textValueInput);
