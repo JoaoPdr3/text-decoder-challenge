@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: #f3f5fc;
 }
@@ -46,9 +42,4 @@ button {
   justify-content: center;
   gap: 10px;
   color: white;
-}
-
-a {
-  width: 100%;
-  text-decoration: none;
 }

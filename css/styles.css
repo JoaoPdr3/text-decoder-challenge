@@ -53,24 +53,24 @@
   color: #0a3871;
 }
 
-.input-container a:nth-child(1) button {
+.input-container button:nth-child(1) {
   background-color: #0a3871;
   box-shadow: 0 5px #356ea9;
   transition: transform .2s;
 }
 
-.input-container a:nth-child(1) button:active {
+.input-container button:nth-child(1):active {
   transform: translateY(5px);
   box-shadow: 0 3px #356ea9;
 }
 
-.input-container a:nth-child(2) button {
+.input-container button:nth-child(2) {
   background-color: #356ea9;
   box-shadow: 0 5px #0a3871;
   transition: transform .2s;
 }
 
-.input-container a:nth-child(2) button:active {
+.input-container button:nth-child(2):active {
   transform: translateY(5px);
   box-shadow: 0 3px #0a3871;
 }
@@ -94,10 +94,6 @@
 
 .output-container .buttons {
   margin-top: calc(24px + 16px);
-}
-
-.output-container a {
-  display: flex;
   justify-content: center;
 }
 
