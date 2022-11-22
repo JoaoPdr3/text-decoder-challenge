@@ -135,3 +135,15 @@
   font-size: 24px;
   font-weight: bold;
 }
+
+/* || FOOTER */
+
+.copyright,
+.copyright a {
+  color: #495057bd;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+  color: #5078b4;
+}

@@ -23,6 +23,14 @@ main {
   display: flex;
 }
 
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
 textarea {
   border: none;
   resize: none;
